@@ -1,0 +1,14 @@
+galaxy_info:
+  author: Aymeric Bringard
+  description: Ansible role to deploy Home Assistant using pip3
+  license: license (BSD)
+  min_ansible_version: 2.0
+  platforms:
+  - name: Debian
+    versions:
+    - stretch
+  galaxy_tags:
+    - automation
+    - home
+    - home-assistant
+dependencies: []

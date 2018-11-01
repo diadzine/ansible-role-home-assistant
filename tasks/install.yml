@@ -1,0 +1,16 @@
+---
+# file: tasks/create_folder.yml
+
+- name: Install defined version of Home Assistant
+  pip:
+    name: homeassistant
+    version: "{{ homeassistant_version }}"
+    executable: pip3
+  when: homeassistant_version != 'latest'
+
+- name: Install latest version of Home Assistant
+  pip:
+    name: homeassistant
+    extra_args: --upgrade
+    executable: pip3
+  when: homeassistant_version == 'latest'

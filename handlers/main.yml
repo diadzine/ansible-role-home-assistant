@@ -1,0 +1,9 @@
+---
+# handlers file for ansible-role-home-assistant
+
+- name: start home assistant
+  systemd:
+    name: "home-assistant"
+    daemon_reload: yes
+    enabled: yes
+    state: started

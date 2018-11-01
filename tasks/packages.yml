@@ -1,0 +1,10 @@
+---
+# file: tasks/packages.yml
+
+- name: Install Python 3 packages
+  apt:
+    state: present
+    name: "{{ item }}"
+  with_items:
+    - python3-dev
+    - python3-pip

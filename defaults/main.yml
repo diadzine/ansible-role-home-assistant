@@ -1,0 +1,14 @@
+---
+# file: defaults/main.yml
+
+# The default config dir
+homeassistant_config_dir: /srv/home-assistant-config
+
+# The default user
+homeassistant_user: homeassistant
+
+# The default port
+homeassistant_port: 8123
+
+# The specific version to install or 'latest'
+homeassistant_version: latest

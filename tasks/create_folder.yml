@@ -1,0 +1,10 @@
+---
+# file: tasks/create_folder.yml
+
+- name: Create folder
+  file:
+    path: "{{ homeassistant_config_dir }}"
+    state: directory
+    mode: 02775
+    owner: "{{ homeassistant_user }}"
+    group: "{{ homeassistant_user }}"

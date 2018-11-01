@@ -1,0 +1,12 @@
+---
+# file: tasks/main.yml
+
+- include: packages.yml
+
+- include: create_user.yml
+
+- include: create_folder.yml
+
+- include: install.yml
+
+- include: systemd.yml
